@@ -17,3 +17,24 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int x = rand()%4;
+	int q,e;
+	if (x==1)
+	{
+		q=a;
+		a=b;
+		b=c;
+		c=d;
+		d=q;
+	}else if (x==2)
+	{
+		q=b;
+		e=a;
+		a=c;
+		b=d;
+		c=q;
+		d=e;
+	}
+}
